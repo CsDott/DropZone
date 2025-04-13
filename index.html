@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DropZone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #1a1a1a;
+      padding: 20px 40px;
+      border-bottom: 2px solid #ffaa00;
+    }
+    .logo {
+      height: 60px;
+    }
+    main {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+      color: #ffaa00;
+    }
+    .cases {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .case {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 170, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .case:hover {
+      transform: scale(1.05);
+    }
+    .case img {
+      width: 250px;
+      height: auto;
+      display: block;
+    }
+    .case-label {
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="DZ_logo.png" alt="DropZone Logo" class="logo">
+    <h2>DropZone</h2>
+  </header>
+  <main>
+    <h1>Wybierz skrzynkę do otwarcia</h1>
+    <div class="cases">
+      <div class="case">
+        <img src="classic_case.png" alt="Classic Case">
+        <div class="case-label">Classic</div>
+      </div>
+      <div class="case">
+        <img src="premium_case.png" alt="Premium Case">
+        <div class="case-label">Premium</div>
+      </div>
+      <div class="case">
+        <img src="knife_case.png" alt="Knife Case">
+        <div class="case-label">Knife Only</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
